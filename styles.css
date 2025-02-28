@@ -1,16 +1,10 @@
-﻿/*
-   Project: 1
-   Sub-part: 3
-   Personal Project
-   
-   Loyd Jones Style Sheet
-   Author: Loyd Jones
-   Date:   2/27/2025
-   
-   Filename: styles.css
-
-*/
-/* General Body Styles */
+﻿/* Global Reset */
+html, body {
+    height: 100%; /* Ensure the body takes full height */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Prevent padding/margin from affecting the layout */
+}
 
 /* General Body Styles */
 body {
@@ -18,10 +12,9 @@ body {
     font-size: 16px;
     color: #0B162A; /* Dark Navy Blue for text */
     background-color: #FFFFFF; /* White background */
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Reset margin */
+    padding: 20px; /* Adds padding for content */
     line-height: 1.6;
-    padding-bottom: 40px; /* Add space at the bottom of the page for footer */
 }
 
 /* Header Styles */
@@ -36,49 +29,80 @@ h1 {
     font-size: 2.5em; /* Larger size for the main header */
 }
 
-/* Navigation Styles */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    background-color: #D93E00; /* Chicago Bears Orange background for nav */
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #FFFFFF; /* White text for the links */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #0B162A; /* Navy Blue for the links on hover */
-}
-
-/* Section Styles */
+/* Add padding to the sections for better spacing */
 section {
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     background-color: #F1F1F1; /* Light gray background for sections */
     border-radius: 8px;
+    max-width: 1200px; /* Optional: To limit the width for a more centered design */
 }
+
+/* Navigation Styles */
+nav {
+    background-color: #D93E00; /* Orange background */
+    color: #FFFFFF; /* White text */
+}
+
+.menu-container {
+    display: flex; /* Align items horizontally */
+    justify-content: flex-start; /* Align text to the left */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px; /* Padding for spacing */
+}
+
+.menu-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 20px; /* Space between "Menu" and links */
+    color: #0B162A; /* Bears navy blue color */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align links horizontally */
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between each link */
+}
+
+nav ul li a {
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    color: #0B162A; /* Change text color to dark navy on hover */
+}
+
+
+/* Adjust the image size */
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    height: auto; /* Keep the aspect ratio */
+    display: block; /* Ensures image is treated as a block element */
+    margin: 0 auto; /* Centers the image */
+}
+
+
 
 /* Footer Styles */
 footer {
     background-color: #0B162A; /* Navy Blue */
-    color: #FFFFFF; /* White text */
+    color: #FFFFFF;
     text-align: center;
-    padding: 10px 20px; /* Reduce padding for a smaller footer */
-    margin-top: 20px; /* Add margin to separate from content */
-    position: relative; /* Default positioning */
+    padding: 10px;
+    position: relative;
     width: 100%;
+    margin-top: 30px; /* Space above footer */
+    bottom: 0;
+    clear: both; /* Ensure the footer is pushed below floated elements */
 }
-
-
 
 
 
