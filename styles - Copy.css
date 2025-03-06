@@ -1,0 +1,101 @@
+﻿/*
+   Project: 1
+   Sub-part: 3
+   Personal Project
+   
+   Loyd Jones Style Sheet
+   Author: Loyd Jones
+   Date:   2/27/2025
+   
+   Filename: styles.css
+
+*/
+/* General Body Styles */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #0B162A;
+    background-color: #FFFFFF;
+    margin: 0; /* Reset margin */
+    padding: 20px; /* Adds padding for content */
+    line-height: 1.6;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+
+/* Header Styles */
+header {
+    background-color: #0B162A; /* Navy Blue */
+    color: #FFFFFF; /* White text */
+    text-align: center;
+    padding: 15px; /* Reduce padding */
+}
+
+h1 {
+    font-size: 2.5em; /* Larger size for the main header */
+}
+
+/* Add padding to the sections for better spacing */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #F1F1F1; /* Light gray background for sections */
+    border-radius: 8px;
+    max-width: 1200px; /* Optional: To limit the width for a more centered design */
+}
+
+
+
+/* Navigation Styles */
+nav {
+    background-color: #D93E00; /* Orange background */
+    color: #FFFFFF; /* White text */
+}
+
+.menu-container {
+    display: flex; /* Align items horizontally */
+    justify-content: flex-start; /* Align text to the left */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px; /* Padding for spacing */
+}
+
+.menu-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 20px; /* Space between "Menu" and links */
+    color: #0B162A; /* Bears navy blue color */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align links horizontally */
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between each link */
+}
+
+nav ul li a {
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #0B162A; /* Change text color to dark navy on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0B162A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    margin-top: 30px; /* Space above footer */
+    bottom: 0;
+}
